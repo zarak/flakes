@@ -10,7 +10,7 @@
         pkgs = import nixpkgs { inherit system; };
       in
       {
-        devShells.default = with pkgs; mkShellNoCC {
+        devShells.default = with pkgs; mkShell {
           buildInputs = [ cowsay ];
         };
       }
