@@ -2,7 +2,7 @@
   description = "Nix flake templates";
 
   outputs = { self }: {
-    templates = {
+    templates = rec {
       minimal = {
         path = ./minimal;
         description = "Minimal template";
