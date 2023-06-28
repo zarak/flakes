@@ -12,6 +12,10 @@
         path = ./haskell;
         description = "Haskell template";
       };
+      cpp = {
+        path = ./cpp;
+        description = "C++ template";
+      };
     };
 
     defaultTemplate = self.templates.minimal;
