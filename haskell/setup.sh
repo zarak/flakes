@@ -23,7 +23,6 @@ IFS=$'\n\t'
 # Script starts here
 current_directory=$(basename "$(pwd)")
 
-nix flake init --template github:zarak/flakes#haskell
 sed -i "s/throw \"put your package name here\!\"/\"${current_directory}\"/g" flake.nix
 echo "use flake" > .envrc 
 direnv allow
