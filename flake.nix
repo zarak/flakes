@@ -16,9 +16,12 @@
         path = ./cpp;
         description = "C++ template";
       };
+      rust = {
+        path = ./rust;
+        description = "Rust template";
+      };
     };
 
     defaultTemplate = self.templates.minimal;
-
   };
 }
