@@ -2,7 +2,8 @@ LIBRARY_NAME=
 TEST_SUITE=${LIBRARY_NAME}-test
 
 test: build
-	cabal test --test-show-details=direct
+	# make test TEST_OPTS="--match=/pattern/"
+	cabal test --test-show-details=direct $(TEST_OPTS)
 
 clean:
 	rm -rf dist
